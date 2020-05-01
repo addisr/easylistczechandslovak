@@ -47,13 +47,11 @@
 ||cztorrent.net/images/bannery/
 ||diit.cz/sites/default/files/_cdr_branding/branding.jpg
 ||digitalnitelevize.cz/obrazky/reklamni_odkazy/
-||dmp.mall.tv^
 ||drbna.cz/templates/drbna-2019/ads/modal.js$script
 ||espoluprace.cz/affiliate/
 ||fdb.cz/ad/
 ||filmporno.cz/media/banners/
-||gjc.mall.tv^
-||gjc-sk.mall.tv^
+||central-beta.mall.tv^
 ||hcdukla.cz/adds/
 ||hcmotor.cz/adds/
 ||hcorli.cz/img/hokejcz/banner_hokejcz.png
@@ -126,9 +124,6 @@
 ||rtvs.sk/bs/xml/vast.xml
 ||rtvs.sk/bs/xml/vmap.xml
 ||ta3.com/api/v1/livebox/video/
-||warmacher.com/banner
-||warmacher.com/bathshop.jpg
-||warmacher.com/cash.gif
 !
 ! ---------- Czech 3rd party blocking rules ---------- !
 !
@@ -187,7 +182,6 @@
 ||sys.starnets.io^$third-party
 ||trackad.cz^$third-party
 ||xzone.cz^$third-party
-||yottlyscript.com^$third-party
 ||zombiezone.cz^$third-party
 ||zumail.cz^$third-party
 !
@@ -204,6 +198,7 @@
 ||partner.mrtns.eu^$third-party
 ||productads.sk^$third-party
 ||recycle-static.zoznam.sk^$third-party
+||s.aimg.sk/*_symfony/build/*-adblock*.js$domain=aktuality.sk
 ||zachej.sk^$third-party
 !
 ! ---------- Czech Whitelisted blocking rules ------------ !
@@ -212,10 +207,10 @@
 @@||heureka.*/crossdomain.xml
 @@||heureka.*/direct/vyvoj-cen/
 @@||iboys.cz/advert-list.php
-@@||navratdoreality.cz^$generichide
 @@||opti.cz/wp-content/uploads/*/reklama_*.jpg$image
 @@||optika-opti.cz/wp-content/uploads/*/reklama_*.jpg$image
 @@||pise.cz^$generichide
+@@||pravopisne.cz^$generichide
 @@||static.cz.prg.cmestatic.com/static/cz/shared/js/advert.js$domain=nova.cz
 @@||www.top-reklama.sk^$~third-party
 @@||warforum.cz/ads.js
@@ -224,12 +219,14 @@
 ! ---------- Czech Whitelisted hiding rules ---------- !
 !
 jaguar-club.net,mazdaclub.cz,nissanclub.cz#@#.reklama
+novinky.cz#@#.g_ad
 skrblik.cz#@##adsense
 sluzebnik.cz#@##adverts
 !
 ! ---------- Slovak Whitelisted blocking rules ------------ !
 !
 @@||bombuj.tv^$generichide
+@@||pravopisne.sk^$generichide
 @@||sledujserialy.to/theme/js/ads.js
 !
 ! ---------- Slovak Whitelisted hiding rules ---------- !
@@ -317,7 +314,6 @@ diit.cz,cdr.cz###pr-prace-blok-view
 diit.cz,cdr.cz##div[class*="openx-async"]
 diit.cz,cdr.cz##div.block-jobs-link
 dotekomanie.cz##div#highlitesAds
-dpp.cz,playzone.cz,serialzone.cz###top-banner
 drbna.cz##.layoutTop
 e15.cz##.gallery-advertisement
 e15.cz###topSite
@@ -400,8 +396,7 @@ pestujemeweb.cz###lista
 mrk.cz##.banner-commercial
 naakup.cz###ad-selfpromo
 naakup.cz###footer-link
-nasepenize.cz##.ks-detail-clanku
-nasepenize.cz##.latest-hypertext
+nasepenize.cz##.box-offer
 nasepraha7.cz###reklama_leaderboard
 nejlevnejsiramy.cz###banner_overlay
 onlajny.com###banner-left-pane
@@ -410,6 +405,7 @@ onlajny.com###sportObchodBanner
 onlajny.com##div.bannerHolderZapasRight
 osel.cz##.right
 pravidla.cz##.advtick
+pravopisne.cz,pravopisne.sk##.advert
 primat.cz##a[class^="levakolejroku"]
 primat.cz##a[class^="pravakolejroku"]
 programujte.com##[class^="adtea"]
@@ -421,22 +417,17 @@ ronnie.cz###rodkaz
 rouming.cz##.roumingLista
 sauto.cz###pvMid
 serialycz.cz##a[href^="https://prehrajto.cz/?cc=prlbmso2"]
+serialzone.cz##.banner-header
+serialzone.cz##.mid-lead-hp
 seznamzpravy.cz,prozeny.cz,garaz.cz##div.ogm-branding > div > div
 sledujufilmy.cz##.bottom-advert
 smartmania.cz##div[id$="-banner"]
 smartmania.cz###text-html-widget-8
 smartmania.cz###text-html-widget-24
-sms.1188.cz##.leader
-sms.1188.cz##.sky-left
-sms.1188.cz##.sky-right
 sms.cz###P_reklama_horni
 sms.cz##.reklamni_sdeleni
 sms.cz##.rs_reklama
 sms.cz##[style="vertical-align:middle; text-align: left; width: 139px;"]
-smsbrana.cz###hlavicka
-smsbrana.cz##.rbox
-smsbrana.cz##.zsLetaky
-smsbrana.cz##.zsSlevy
 stesti.cz##.mabo.faa
 stesti.cz##[style="width:960px;margin:0 auto;text-align:left"]
 super.cz##div.ad
@@ -461,7 +452,7 @@ warforum.cz###t-overlay
 warforum.cz##.row0
 warforum.cz##a[href="http://acu.cz"]
 warforum.cz##h3
-webshare.cz##.ws-adver-bg
+webshare.cz##[class^="ws-banner-"]
 webtrh.cz##.breadcrumb + .ui-state-default
 webtrh.cz##ol > li[id^="navbar_notice"]
 zena-in.cz##div.main-top
@@ -513,12 +504,6 @@ topky.sk##.takeoverKlik
 tv-program.sk##.dragobj > div:nth-of-type(2)
 tv-program.sk##.stn.stns > a[target="_blank"]
 tv-program.sk##.stn.stnu > a[target="_blank"]
-warmacher.com###bluemask
-warmacher.com##.tbox
-warmacher.com##.tmask
-warmacher.com###fblikebg
-warmacher.com###fblikepop
-warmacher.com###reklamne_bannery
 zmeskanyhovor.com##.native-ads
 !
 ! ---------- ABP Extended filters ---------- !
@@ -530,7 +515,7 @@ dotekomanie.cz#?#div.box:-abp-contains(/^reklama/i)
 lupa.cz,root.cz#?#div.article--content:-abp-has(div.design-advert)
 pctuning.tyden.cz#?#div.moduletable:-abp-has(div[style*="reklama-bg"])
 pctuning.tyden.cz#?#div.moduletable:-abp-has(div[id^="AdTrack"])
-search.seznam.cz,clanky.seznam.cz#?#.Result--organic:-abp-has(a[tabindex="0"][class*="Result-url-link"])
+search.seznam.cz,clanky.seznam.cz#?#.Result--organic:-abp-has(p + div + div)
 search.seznam.cz,clanky.seznam.cz#?#div.Layout--left > div:-abp-has(div.ZboziCategory)
 !
 ! ---------- uBlock Extended filters ---------- !
